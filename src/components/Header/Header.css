@@ -1,0 +1,51 @@
+.header {
+   background-color: dodgerblue;
+}
+
+.header__wrapper {
+   display: flex;
+   align-items: center;
+padding: 20px;
+   @media (max-width: 900px) {
+      flex-direction: column-reverse;
+
+   }
+}
+
+.header__box {
+   display: flex;
+   flex-direction: column;
+   gap: 20px;  
+    
+    color: #fff;
+
+    span {
+      font-size: 52px;
+    }
+    p {
+      max-width: 300px;
+    }
+   button {
+      max-width: 250px;
+      background-color: gold;
+      padding: 15px;
+      font-weight: 600;
+      border: none;
+      transition: 0.3s;
+cursor: pointer;
+      &:hover {
+         background-color: rgb(160, 136, 0);
+      }
+   }
+
+   @media (max-width: 900px) {
+      justify-content: center;
+      text-align: center;
+      align-items: center;
+   }
+}
+
+.header__img {
+   max-width: 600px;
+   width: 100%;
+}
